@@ -4,19 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -b",
     "start": "tsc -b && node dist/index.js"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*"
   },
   "exports": {
-    "./config": "./src/index.ts"
+    "./config": "./dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@types/node": "^22.15.3"
+    "@types/node": "^22.15.3",
+    "dotenv": "^17.4.2"
   }
 }
