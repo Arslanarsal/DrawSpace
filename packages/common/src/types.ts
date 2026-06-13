@@ -12,6 +12,5 @@ export const signinScheme = z.object({
 
 export const createroom = z.object({
     name: z.string().min(3).max(100),
-    userId : z.string(),
-    roomId : z.string()
+    userId : z.string()
 })
